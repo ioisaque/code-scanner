@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+#qr-scanner {
+  margin: 0;
+  width: 100%;
+  height: calc(min(100vh, 100%) - (env(safe-area-inset-bottom, 0) * 1.75));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("https://cdn.isaque.it/assets/bgs/bg-cube.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#qr-scanner.on {
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+}
+#qr-scanner.off * {
+  display: none;
+}
+
+#qr-scanner video,
+#qr-scanner canvas {
+  top: 3px;
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+}
+
+#qr-scanner button {
+  color: #0076f3;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+#qr-scanner .contour.qr {
+  position: absolute;
+  border-radius: 8px 8px 0 0;
+  border: 4px solid #ffd22b;
+  background: url("https://cdn.isaque.it/assets/rights/qrcode_overlay_colors.png") rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#qr-scanner .result.qr {
+  height: 25px;
+  padding: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 0 0 8px 8px;
+  background-color: #ffd22b;
+  font-family: "Poppins", sans-serif;
+}
+
+#qr-scanner .contour.bar {
+  position: absolute;
+  border: 3px solid #ffd22b;
+}
+#qr-scanner .result.bar {
+  height: 25px;
+  padding: 0.5em;
+  font-size: 1em;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #ffd22b;
+  font-family: "Poppins", sans-serif;
+}
