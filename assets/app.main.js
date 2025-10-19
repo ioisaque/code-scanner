@@ -14,7 +14,7 @@ class CodeScanner {
     this.workerBusy = false;
     this.currentCodes = new Map();
     this.lastBarcodeResult = null;
-    this.beepSound = new Audio('beep.mp3');
+    this.beepSound = new Audio('assets/beep.mp3');
 
     this.qrScanner = document.getElementById('qr-scanner');
 
@@ -47,7 +47,7 @@ class CodeScanner {
   };
 
   setupWorker = () => {
-    this.worker = new Worker('./app.worker.js');
+    this.worker = new Worker('./assets/app.worker.js');
     this.worker.onmessage = (e) => {
       this.workerBusy = false;
       const { ok, text, points, format } = e.data || {};

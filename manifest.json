@@ -4,8 +4,8 @@
   "scope": ".\/",
   "start_url": ".\/",
   "display": "standalone",
-  "theme_color": "#fdd001",
-  "background_color": "#000000",
+  "theme_color": "#000000",
+  "background_color": "#fdd001",
   "description": "Um aplicativo web de scanner rápido e seguro para escanear e decodificar códigos QR e BAR diretamente no seu navegador.",
   "icons": [
     {
@@ -19,6 +19,12 @@
       "sizes": "512x512",
       "type": "image\/png",
       "purpose": "any"
+    },
+    {
+      "src": "./assets/portfolio-logo.png",
+      "sizes": "1080x1080",
+      "type": "image\/png",
+      "purpose": "portfolio"
     }
   ]
 }
