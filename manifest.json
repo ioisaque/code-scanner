@@ -1,12 +1,12 @@
 {
+  "id": "QRScan",
   "name": "Code Scanner",
-  "short_name": "CodeScanner",
-  "scope": ".\/",
-  "start_url": ".\/",
+  "short_name": "Code Scan",
+  "scope": "./",
+  "start_url": "./",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#fdd001",
-  "description": "Um aplicativo web de scanner rápido e seguro para escanear e decodificar códigos QR e BAR diretamente no seu navegador.",
+  "background_color": "#FDD000",
   "icons": [
     {
       "src": "https://cdn.isaque.it/assets/icons/qrcode_ideyou_192.png",
@@ -26,5 +26,7 @@
       "type": "image\/png",
       "purpose": "portfolio"
     }
-  ]
+  ],
+  "app_name": "Code Scanner",
+  "description": "Um aplicativo rápido e seguro para escanear e decodificar códigos QR e BAR diretamente no seu navegador."
 }
