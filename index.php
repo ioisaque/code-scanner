@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- META -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="IdeYou - Isaque Costa">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="512x512">
+  <title>Code Scanner</title>
+  <meta name="description"
+    content="Um aplicativo web de scanner rápido e seguro para escanear e decodificar códigos QR e BAR diretamente no seu navegador.">
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json?v=<?= filemtime('manifest.json'); ?>">
+  <meta name="theme-color" content="#000000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <link rel="apple-touch-icon" href="assets/icons/apple-icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+    }
+  </style>
+  <link charset="UTF-8" rel="stylesheet" href="assets/app.css" />
+</head>
+
+<body>
+  <div id="qr-scanner" class="off"></div>
+
+  <script src="assets/app.main.js"></script>
+</body>
+
+</html>

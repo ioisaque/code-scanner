@@ -1,32 +1,55 @@
 {
   "id": "QRScan",
   "name": "Code Scanner",
-  "short_name": "Code Scan",
+  "short_name": "QrScan",
   "scope": "./",
   "start_url": "./",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "theme_color": "#000000",
-  "background_color": "#FDD000",
+  "background_color": "#FFFFFF",
   "icons": [
     {
-      "src": "https://cdn.isaque.it/assets/icons/qrcode_ideyou_192.png",
+      "src": "assets/icons/sm-favicon.png",
       "sizes": "192x192",
-      "type": "image\/png",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "https://cdn.isaque.it/assets/icons/qrcode_ideyou_512.png",
+      "src": "assets/icons/favicon.png",
       "sizes": "512x512",
-      "type": "image\/png",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "./assets/portfolio-logo.png",
-      "sizes": "1080x1080",
-      "type": "image\/png",
+      "src": "assets/icons/sm-favicon-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/favicon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icons/apple-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "portfolio"
     }
   ],
+  "categories": [
+    "camera",
+    "qrcode",
+    "scanner"
+  ],
+  "lang": "pt-BR",
+  "dir": "ltr",
   "app_name": "Leitor de QRcode",
   "description": "Um aplicativo rápido e seguro para escanear e decodificar códigos QR e BAR diretamente no seu navegador."
 }
